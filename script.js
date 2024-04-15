@@ -33,7 +33,7 @@ async function enviarDados() {
         nome, sobrenome, email, mensagem
     }
 
-    url = "https://generica"
+    url = "https://api-aula.up.railway.app/generica"
 
     const options = {
         method: 'POST',
