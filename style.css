@@ -214,8 +214,8 @@ footer {
     .divUm {
         background-color: #E3E8ED;
         padding: 25px;
-        height: 50%;
-        width: 50%;
+        height: 100%;
+        width: 100%;
         display: flex;
         flex-direction: row;
     }
@@ -273,8 +273,8 @@ footer {
     .divDois {
         background-color: #E3E8ED;
         padding: 25px;
-        height: 50%;
-        width: 50%;
+        height: 100%;
+        width: 100%;
         display: flex;
         flex-direction: row;
     }
