@@ -30,7 +30,10 @@ async function enviarDados() {
     const mensagem = document.getElementById("mensagem").value
 
     const dadosParaEnviar = {
-        nome, sobrenome, email, mensagem
+        nome: nome,
+        sobrenome: sobrenome,
+        email: email,
+        mensagem: mensagem
     }
 
     url = "https://api-aula.up.railway.app/generica"
