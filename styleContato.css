@@ -150,3 +150,159 @@ footer {
     color: white;
     overflow: auto;
 }
+
+@media (max-width: 640px) {
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        height: 100vh;
+        padding: 10px;
+        background-color: #FCE6A8;
+        font-size: 18px;
+        display: grid;
+        gap: 10px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.1fr 0.1fr 1fr 0.1fr;
+        grid-template-areas:
+            "cabecalho"
+            "menu"
+            "principal"
+            "rodape";
+    }
+
+    .menu {
+        background-color: #D2E4E1;
+        grid-area: menu;
+        display: flex;
+        flex: row;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    header {
+        background-color: #D2E4E1;
+        grid-area: cabecalho;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    aside {
+        background-color: #D2E4E1;
+        grid-area: "aside";
+        display: flex;
+        flex: column;
+    }
+
+    .divTres {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .divFotoPessoa {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .divBotoesPessoa {
+        display: flex;
+        flex-direction: row;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #D2E4E1;
+        grid-area: "principal";
+        padding: 20px;
+    }
+
+    .divQuatro {
+        background-color: #E3E8ED;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        gap: 20px;
+        padding: 20px;
+        height: 100%;
+        width: 80%;
+    }
+
+    .divNomeSobrenome {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        gap: 20px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .divEmailMensagemBotao {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .divVazia {
+        background-color: #D2E4E1;
+        grid-area: "divVazia";
+    }
+
+    footer {
+        background-color: #D2E4E1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: "rodape";
+        text-align: center;
+    }
+
+    .input {
+        background-color: white;
+        border-radius: 5px;
+        height: 50px;
+        width: 100%;
+        text-align: justify;
+        padding: 10px;
+        overflow: auto;
+    }
+
+    .inputMensagem {
+        background-color: white;
+        border-radius: 5px;
+        height: 200px;
+        width: 100%;
+        text-align: justify;
+        padding: 10px;
+        overflow: auto;
+    }
+
+    .botao {
+        background-color: #788896;
+        border-radius: 5px;
+        height: 50px;
+        width: 100%;
+        color: white;
+        overflow: auto;
+    }
+}
