@@ -21,3 +21,26 @@ async function buscarPokemon() {
 
     return pokemon
 }
+
+async function enviarDados() {
+
+    const nome = document.getElementById("nome").value
+    const sobrenome = document.getElementById("sobrenome").value
+    const email = document.getElementById("email").value
+    const mensagem = document.getElementById("mensagem").value
+
+    const dadosParaEnviar = {
+        nome, sobrenome, email, mensagem
+    }
+
+    url = "https://generica"
+
+    const options = {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(dadosParaEnviar)
+    }
+
+    const resposta = await fetch(url, options)
+    return resposta
+}
