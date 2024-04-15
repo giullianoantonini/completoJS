@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício Completo JS</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+    <div class="menu">
+        <button id="botaoPrincipal" onclick="window.location.href='index.html'" class="botao">Principal</button>
+        <button id="botaoContato" onclick="window.location.href='contato.html'" class="botao">Contato</button>
+    </div>
+    <header>
+        Treinando
+    </header>
+    <main>
+        <div id="divUm" class="divUm">
+            <div id="divSoma" class="divSoma">
+                <input id="numeroUm" type="number" class="input" placeholder="Digite um número">
+                <input id="numeroDois" type="number" class="input" placeholder="Digite um número">
+                <button id="botaoSoma" class="botao" onclick="somarValoresInputs()">Somar</button>
+            </div>
+            <div id="resultado" class="divRetorno1">
+                Resultado: <span id="resultadoSoma" class="resultadoSoma">0</span>
+            </div>
+        </div>
+        <div id="divDois" class="divDois">
+            <div id="divIDPokemon" class="divIDPokemon">
+                <input id="idPokemon" class="input" type="text" placeholder="Digite um número">
+                <button id="botaoBuscar" class="botao" onclick="buscarPokemon()">Buscar</button>
+            </div>
+            <div id="divPokemon" class="divRetorno2">
+                <div id="divNomePokemon" class="nomePokemon">
+                    Nome: <span id="nomePokemon"></span>
+                </div>
+                <div id="divImagemPokemon" class="divImagemPokemon">
+                    <img id="imagemPokemon" class="imagemPokemon">
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        Construído por:
+        <br>
+        Giulliano A.
+    </footer>
+
+</body>
+
+</html>
